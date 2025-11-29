@@ -6,7 +6,8 @@ from flask import Flask, jsonify, request, session, render_template, redirect, u
 from datetime import datetime
 from database import db, init_db
 from game_logic import BingoGame
-
+from dotenv import load_dotenv
+load_dotenv()
 # Configure logging
 logging.basicConfig(
     level=logging.DEBUG,

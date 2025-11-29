@@ -1,8 +1,8 @@
 import os
 
 # Bot Configuration
-TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
-ADMIN_IDS = [int(id) for id in os.getenv("ADMIN_IDS", "").split(",") if id]
+TELEGRAM_BOT_TOKEN = os.getenv("8241379427:AAFh4fFeBAN-kvufbSVEnjjlYVv0ebq6LFQ")
+ADMIN_IDS = [int(id) for id in os.getenv("6885511645", "").split(",") if id]
 
 # Game Configuration
 CARTELA_SIZE = 100
@@ -15,10 +15,10 @@ REFERRAL_BONUS = 20  # in birr
 # Admin Panel Configuration
 ADMIN_USERNAME = os.getenv("ADMIN_USERNAME", "admin")
 ADMIN_PASSWORD = os.getenv("ADMIN_PASSWORD", "admin123")
-SECRET_KEY = os.getenv("SECRET_KEY", "your-secret-key-here")
+SECRET_KEY = os.getenv("SECRET_KEY", "super-secret-key")
 
 # Database Configuration
-SQLALCHEMY_DATABASE_URI = os.environ.get("DATABASE_URL")
+SQLALCHEMY_DATABASE_URI = os.environ.get("sqlite:///bingo.db")
 SQLALCHEMY_TRACK_MODIFICATIONS = False
 
 # Flask Configuration

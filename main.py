@@ -5,7 +5,8 @@ from bot import main as bot_main
 from multiprocessing import Process
 import signal
 import sys
-
+from dotenv import load_dotenv
+load_dotenv()
 def signal_handler(sig, frame):
     print('Shutting down gracefully...')
     sys.exit(0)
